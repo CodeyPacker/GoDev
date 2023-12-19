@@ -2,7 +2,8 @@ package main
 
 import (
 	"os/exec"
-  "github.com/fatih/color"
+
+	"github.com/fatih/color"
 )
 
 func openProjectURLs(project Project) error {
