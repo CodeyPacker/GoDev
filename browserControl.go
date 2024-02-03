@@ -22,6 +22,9 @@ func openProjectURLs(project Project) error {
     if err := openURL(project.RepoUrl); err != nil {
         // return err
     }
+    if err := openURL(project.HostingUrl); err != nil {
+        // return err
+    }
 
     return nil
 }
@@ -32,7 +35,7 @@ func closeBrowserTabs() error {
         tell front window
             repeat with _tab in tabs
                 set _url to get URL of _tab
-                if _url contains "bitbucket" or _url contains "contentful" or _url contains "localhost" then
+                if _url contains "bitbucket" or _url contains "contentful" or _url contains "localhost" or _url contains "gatsbyjs" then
                     set _tab_id to get id of _tab
                     tell tab id _tab_id to close
                 end if

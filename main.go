@@ -4,6 +4,7 @@ import (
   "encoding/json"
   "fmt" 
   "io/ioutil"
+  "flag"
 )
 
 type Project struct {
@@ -13,6 +14,7 @@ type Project struct {
     StartCommand   string `json:"startCommand"`
     LocalhostUrl   string `json:"localhostUrl"`
     ContentfulUrl  string `json:"contentfulUrl"`
+    HostingUrl  string `json:"hostingUrl"`
     RepoUrl        string `json:"repoUrl"`
     Editor         string `json:"editor"`
 }
@@ -22,6 +24,9 @@ type Configuration struct {
 }
 
 func main() {
+  branchFlag := flag.String("b", "", "Branch to create in the format 'feature/ROGUE-1234-new-branch'")
+  flag.Parse()
+
   configFile, err := ioutil.ReadFile("config.json")
   if err != nil {
     fmt.Println("Error reading config file:", err)
@@ -39,6 +44,15 @@ func main() {
   if err != nil {
     fmt.Println("Project selection canceled:", err)
     return
+  }
+
+  // Check and create branch if flag is provided
+  if *branchFlag != "" {
+    err = createGitBranch(selectedProject, *branchFlag)
+    if err != nil {
+        fmt.Println("Error creating branch:", err)
+        return
+    }
   }
 
   err = openVSCodeAndRunCommand(selectedProject)

@@ -1,4 +1,5 @@
 {
+  "defaultJiraProject": "ROGUE",
   "projects": [
     {
       "name": "yourlocalsecurity",
@@ -10,7 +11,8 @@
       "repoURL": "https://bitbucket.org/clearlinkit/adt/src/master/",
       "hostingUrl": "",
       "hostingPlatform": "https://www.gatsbyjs.com/dashboard/2ab24f47-9a39-4ada-840e-19b19f2862f2/sites/892cda46-af33-4a66-b25c-c1915ec85347/deploys?loggedin=1&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmNmY1NzVjMi04NGNjLTQ4MGEtYTAzZi1mOWRkMTRlN2I0ODgiLCJlbWFpbCI6ImNvZHkucGFja2VyQGNsZWFybGluay5jb20iLCJpYXQiOjE3MDI5NTk4MTQsImV4cCI6MTcwMzAwMzAxNCwiaXNzIjoiR2F0c2J5IEluYyIsInN1YiI6ImNvZHkucGFja2VyQGNsZWFybGluay5jb20ifQ.Fwly5Zfyc1P2n-5VFpPik64WRJXrBXPjXUJFAu_PuEYFyqXB5VJmRgeA57d4lF0Kzhkr3PY3VazO6dRXyMZTECC2bxaY0wY5QaLCFjBtu4ovs6E3Zp7ea4iUFFxA8h6EMCtWrKJX8Qt3xsuV0ZJJWqIsAUK3c_6DRQ6PgbWs9vVZxKrdBfixRFIgFpWq2X6jML5_HMrEbbBYd57w33pJSf5klN36RmMCFixVRFXp-A7OBWPDDPIMCOzDjjs8XWENcbxmQ_fdyaCcAhtAjDcy5i_hMfHbsjCjgDf12t-Pw3PMsIrkAbSE8MEos9y6Cs-efwhJIOLntKOMkVAA4BGQOVK7e0XTHtGo5UTOwPZL6UbPrgSMwNeCToJxZigU-mKlq9kCVUocIX4QAqshO15NUk9-2ZYvDgJvbWB8EGClTMtZDB1rUh3o66HiLHqqEjMWK7fQ78vfJtJ3HTL4nzfcJA7oRjT-zwbm-ZiULJU2BxhIpbOru3iA-aDURAckdZdnYdadkdXAEzv-P9eh3cEUtMbGplY29HbwYsfNN1ScbTL6ZZzHD0hTJsIbxIbgb9DXHo1WhEg_Xuw0beBsKalTZp3EDotbIWN3n0H0TbnF7eXOHGnAwQw3eROdkrKMGg1ffvAIalH9nwzKhHNrc2TKZHyTRoVuPowluH7k1cNPnCM&expiration=2024-01-02T04:23:34.762Z&ssoToken=&ssoExpiration=&id=f6f575c2-84cc-480a-a03f-f9dd14e7b488&loginRedirectUrl=/dashboard/2ab24f47-9a39-4ada-840e-19b19f2862f2/sites/892cda46-af33-4a66-b25c-c1915ec85347/deploys&selectedPlan=&redirectToLeadCapture=false",
-      "editor": "code"
+      "editor": "code",
+      "jiraProject": "ROGUE"
     },
     {
       "name": "attsavings",
@@ -49,6 +51,10 @@
       "name": "go.brightspeed",
       "directoryPath": "/Users/cody.packer/sigil/sites/brightspeed",
       "installCommand": "yarn install",
+      "startCommand": "yarn develop:go.brightspeed",
+      "localhostUrl": "http://localhost:8000",
+      "startCommand": "yarn develop:go.brightspeed",
+      "localhostUrl": "http://localhost:8000",
       "startCommand": "yarn develop:go.brightspeed",
       "localhostUrl": "http://localhost:8000",
       "contentfulURL": "https://app.contentful.com/spaces/5hj9nja88b4h/entries",
@@ -331,10 +337,6 @@
       "name": "viasatsavings",
       "directoryPath": "/Users/cody.packer/sigil/sites/viasat",
       "installCommand": "yarn install",
-      "startCommand": "yarn develop:viasatsavings",
-      "localhostUrl": "http://localhost:8000",
-      "repoURL": "https://bitbucket.org/clearlinkit/viasat/src/master/",
-      "hostingUrl": "https://www.gatsbyjs.com/dashboard/2ab24f47-9a39-4ada-840e-19b19f2862f2/sites/9275602e-b775-447b-add8-658912cbf303/deploys",
       "contentfulURL": "https://app.contentful.com/spaces/x5gqbb5i1oum/entries",
       "editor": "code"
     },
